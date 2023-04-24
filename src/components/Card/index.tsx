@@ -7,7 +7,7 @@ import "./style.scss";
 const wordInfo = {
   word: "Hello",
   pos: " exclamation, noun",
-  phon: "/həˈləʊ/",
+  phon: "həˈləʊ",
   audio:
     "https://www.oxfordlearnersdictionaries.com/media/english/us_pron/h/hel/hello/hello__us_1_rr.mp3",
   senses: [
@@ -43,15 +43,15 @@ const Card = () => {
   return (
     <div className="card-wrapper">
       <Row gutter={[16, 16]} justify="start" align="middle">
-        <Col className="sound" span={3}>
+        <Col className="sound" span={2}>
           <SoundFilled
             onClick={() => {
               new Audio(audio).play();
             }}
           />
         </Col>
-        <Col className="phon" span={21}>
-          {phon}
+        <Col className="phon" span={22}>
+          /{phon}/
         </Col>
         <Col className="word" span={24}>
           {word}
