@@ -33,8 +33,9 @@ export const ProvideFamilies = ({ children }: PropsWithChildren) => {
       const word = randomWord();
       const res = await axios.get(`https://fidbsd-8080.csb.app/api/${word}`);
       setWordInfo(res.data);
-    } catch (error) {
-      await crawlData();
+    } catch (error: any) {
+      // await crawlData();
+      console.error(error.message);
     }
   };
 

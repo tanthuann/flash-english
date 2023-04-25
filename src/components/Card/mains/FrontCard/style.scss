@@ -1,0 +1,60 @@
+.front-card-wrapper {
+  width: min-content;
+  min-width: 500px;
+  min-height: 500px;
+  padding: 40px;
+  color: #282c34;
+  text-align: left;
+  background-color: #fff;
+  border-radius: 8px;
+
+  .word {
+    font-weight: 700;
+    font-size: 60px;
+  }
+  .pos {
+    color: #aaa;
+    font-size: 24px;
+    font-style: italic;
+  }
+
+  .sound {
+    font-size: 24px;
+  }
+
+  .phon {
+    font-size: 24px;
+  }
+
+  .explains {
+    font-size: 16px;
+    .senses,
+    .examples {
+      padding-top: 10px;
+    }
+
+    .senses {
+      padding-left: 0;
+      list-style-type: none;
+    }
+
+    .sense,
+    .example {
+      padding: 5px 0;
+    }
+
+    .examples {
+      .example {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .ref {
+    text-align: center;
+    a:hover {
+      color: #69b1ff;
+      text-decoration: underline;
+    }
+  }
+}
