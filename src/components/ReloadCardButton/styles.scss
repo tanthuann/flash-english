@@ -1,0 +1,16 @@
+.reload-card-button-wrapper {
+  position: absolute;
+  top: 80px;
+  right: 80px;
+  bottom: 80px;
+  left: 80px;
+  color: #fff;
+  font-size: 30px;
+  mix-blend-mode: exclusion;
+  pointer-events: none;
+
+  .anticon {
+    animation-fill-mode: forwards;
+    pointer-events: all;
+  }
+}
