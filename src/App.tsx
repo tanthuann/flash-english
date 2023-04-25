@@ -2,6 +2,7 @@
 import { ConfigProvider } from "antd";
 // components
 import Card from "./components/Card";
+import ReloadCardButton from "./components/ReloadCardButton";
 // contexts
 import { ProvideFamilies } from "./contexts/ProvideFamilies";
 // others
@@ -10,15 +11,16 @@ import "./App.css";
 
 const App = () => {
   return (
-    <div className="App">
-      <ConfigProvider prefixCls="flash">
-        <ProvideFamilies>
+    <ConfigProvider prefixCls="flash">
+      <ProvideFamilies>
+        <div className="App">
           <main className="main">
             <Card />
           </main>
-        </ProvideFamilies>
-      </ConfigProvider>
-    </div>
+          <ReloadCardButton />
+        </div>
+      </ProvideFamilies>
+    </ConfigProvider>
   );
 };
 
